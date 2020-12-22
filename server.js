@@ -14,6 +14,7 @@ app.get('/', (req, res) => res.sendFile(__dirname + '/pages/index.html'))
 app.get('/gallery', (req,res) => res.sendFile(__dirname + '/pages/gallery.html'));
 app.get('/music', (req,res) => res.sendFile(__dirname + '/pages/music.html'));
 app.get('/quotes', (req,res) => res.sendFile(__dirname + '/pages/quotes.html'));
+app.get('/funfacts', (req,res) => res.sendFile(__dirname + '/pages/funfacts.html'));
 app.get('*', (req,res) => res.sendFile(__dirname + '/pages/notfound.html'));
 
 https.createServer({
